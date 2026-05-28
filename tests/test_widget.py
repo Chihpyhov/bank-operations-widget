@@ -31,3 +31,4 @@ def test_get_date():
 def test_get_date_invalid():
     with pytest.raises(ValueError):
         get_date("не дата")
+
