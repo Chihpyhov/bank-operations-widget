@@ -21,7 +21,7 @@ def mask_account_card(info: str) -> str:
         raise ValueError("Неверный формат: ожидаются тип и номер через пробел")
 
     name = " ".join(parts[:-1])  # всё, кроме последнего слова — название
-    number = parts[-1]          # последнее слово — номер
+    number = parts[-1]  # последнее слово — номер
 
     # Определяем, счёт или карта
     if name.lower().startswith("счет"):
